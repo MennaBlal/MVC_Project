@@ -23,7 +23,7 @@ namespace ProjectMVC.ViewModel
 
 
         public int? SelectedCompanyId { get; set; }
-        public List<Company>? Companies { get; set; }
+        public List<Campany>? Companies { get; set; }
 
     }
 }

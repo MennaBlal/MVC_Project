@@ -28,6 +28,7 @@ namespace ProjectMVC
 
             builder.Services.AddScoped<ICategory, CategoryRepository>();
             builder.Services.AddScoped<IJob, JobRepository>();
+            builder.Services.AddScoped<ICampany, CampanyRepository>(); // Example registration, adjust as needed
 
 
             var app = builder.Build();

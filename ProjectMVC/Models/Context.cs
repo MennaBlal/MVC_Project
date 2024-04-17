@@ -15,7 +15,7 @@ namespace ProjectMVC.Models
         }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Job> Jobs { get; set; }
-        public DbSet<Company> Companys { get; set; }
+        public DbSet<Campany> Companys { get; set; }
         public DbSet<ApplyForJob> ApplyForJobs { get; set; }
         public DbSet<Feedback> Feedbacks { get; set; }
 

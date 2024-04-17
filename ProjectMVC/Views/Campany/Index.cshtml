@@ -1,0 +1,33 @@
+﻿@model List<ProjectMVC.Models.Campany>
+
+@{
+    ViewData["Title"] = "Index";
+   
+}
+
+<form asp-action="SomeAction" method="post">
+    <div class="container-xxl py-5">
+        <div class="container">
+            <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">My Companies</h1>
+            <a asp-controller="Campany" asp-action="New" class="btn btn-success mb-3">Add New Company</a>
+            <div class="row g-4">
+                @foreach (var campany in Model)
+                {
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">@campany.Name</h5>
+                                <p class="card-text">@campany.Description</p>
+                                <div class="btn-group" role="group" aria-label="Company Actions">
+                                    <a asp-controller="Campany" asp-action="Edit" asp-route-id="@campany.Id" class="btn btn-success me-3">Edit</a>
+                                    <a asp-controller="Campany" asp-action="Delete" asp-route-id="@campany.Id" class="btn btn-danger">Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+   
+</form>

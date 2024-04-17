@@ -45,7 +45,6 @@ namespace ProjectMVC.Controllers
         {
             return View("NewCat");
         }
-
         [HttpPost]
         public IActionResult SaveNEw(Category cat)
         {

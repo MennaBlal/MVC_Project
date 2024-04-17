@@ -25,7 +25,7 @@ namespace ProjectMVC.Models
 
         [ForeignKey("Company")]
         public int? CompanyId { get; set; }
-        public Company? Company { get; set; }
+        public Campany? Company { get; set; }
 
 
 
