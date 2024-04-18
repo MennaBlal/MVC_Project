@@ -49,18 +49,18 @@ namespace ProjectMVC.Controllers
             {
                 try
                 {
-                    if (company.Name != null && company.Description != null)
-                    {
-                        _CompanyRepository.Insert(company);
-                        _CompanyRepository.Save();
+            if (company.Name != null && company.Description != null)
+            {
+                _CompanyRepository.Insert(company);
+                _CompanyRepository.Save();
 
-                        return RedirectToAction("Index");
-                    }
+                return RedirectToAction("Index");
+            }
                     else
                     {
                         ModelState.AddModelError("error", "Name and Description cannot be null");
-                        return View("New", company);
-                    }
+            return View("New", company);
+        }
                 }
                 catch (Exception ex)
                 {
