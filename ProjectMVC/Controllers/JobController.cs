@@ -27,24 +27,17 @@ namespace ProjectMVC.Controllers
         //}
 
         [HttpGet]
-
         public IActionResult FullTimeJobIndex()
         {
-
             List<Job> JobListModel2 = _JobRepository.GetFullTimeJob();
             return View("FullTimeJobIndex", JobListModel2);
-
         }
         [HttpGet]
-
         public IActionResult PartTimeJobIndex()
         {
-
             List<Job> JobListModel1 = _JobRepository.GetPartTimeJob();
             return View("PartTimeJobIndex", JobListModel1);
-
         }
-
         [HttpGet]
         public IActionResult New()
         {

@@ -11,7 +11,6 @@ namespace ProjectMVC.Repository
 
         public JobRepository(Context _context)
         {
-
             Id = Guid.NewGuid().ToString();//unique
             context = _context;//new Context();
         }

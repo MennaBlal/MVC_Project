@@ -36,8 +36,16 @@ namespace ProjectMVC.Controllers
         }
         public IActionResult Job_Detail()
         {
+            
             return View("Job_Detail");
+            
         }
+        public IActionResult Apply()
+        {
+            return View();
+        }
+        
+
         //public IActionResult Job_List()
         //{
         //    return View("Job_List");
