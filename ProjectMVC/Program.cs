@@ -18,6 +18,15 @@ namespace ProjectMVC
             builder.Services.AddDbContext<Context>(options =>
                 options.UseSqlServer(connectionString));
 
+            builder.Services.AddScoped<ICategory, CategoryRepository>();
+
+            builder.Services.AddScoped<IJob, JobRepository>();
+
+            builder.Services.AddScoped<Ifeedback, FeedbackRepository>();
+
+            builder.Services.AddScoped<IContact, ContactRepository>();
+            builder.Services.AddScoped<SearchAboutRepository,SearchAboutRepository>();
+
 
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
@@ -26,8 +35,8 @@ namespace ProjectMVC
 
             builder.Services.AddControllersWithViews();
 
-            builder.Services.AddScoped<ICategory, CategoryRepository>();
-            builder.Services.AddScoped<IJob, JobRepository>();
+           
+
 
 
             var app = builder.Build();

@@ -68,13 +68,13 @@
                             <a asp-controller="Home" class="dropdown-item" asp-action="Errors">404</a>
                         </div>
                     </div>
-                    <a asp-controller="Home" class="nav-item nav-link" asp-action="Contact">Contact</a>
+                    <a asp-controller="Contact" class="nav-item nav-link" asp-action="Index">Contact</a>
                 </div>
                 <a asp-controller="Home" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block" asp-action="Category">Post A Job<i class="fa fa-arrow-right ms-3"></i></a>
             </div>
         </nav>
         <!-- Navbar End -->
-        <!-- Carousel Start -->
+       @*  <!-- Carousel Start -->
         <div class="container-fluid p-0">
             <div class="owl-carousel header-carousel position-relative">
                 <div class="owl-carousel-item position-relative">
@@ -109,10 +109,10 @@
                 </div>
             </div>
         </div>
-        <!-- Carousel End -->
+        <!-- Carousel End --> *@
         @RenderBody()
 
-        <!-- Search Start -->
+        @* <!-- Search Start -->
         <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
             <div class="container">
                 <div class="row g-2">
@@ -632,7 +632,7 @@
                 </div>
             </div>
         </div>
-        <!-- Testimonial End -->
+        <!-- Testimonial End --> *@
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5">
